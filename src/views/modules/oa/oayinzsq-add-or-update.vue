@@ -3,15 +3,21 @@
     :title="!dataForm.id ? '新增' : '修改'"
     :close-on-click-modal="false"
     :visible.sync="visible">
-    <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
+    <el-form :inline="true" :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
     <el-form-item label="起草人" prop="appname">
       <el-input v-model="dataForm.appname" placeholder="起草人"></el-input>
     </el-form-item>
     <el-form-item label="起草时间" prop="appdate">
       <el-input v-model="dataForm.appdate" placeholder="起草时间"></el-input>
     </el-form-item>
-    <el-form-item label="所在部门" prop="depart">
-      <el-input v-model="dataForm.depart" placeholder="所在部门"></el-input>
+    <el-form-item label="所在部门">
+      <!-- <el-input v-model="dataForm.depart" placeholder="所在部门"></el-input> -->
+      <el-select v-model="dataForm.depart" placeholder="所在部门">
+        <el-option label="管理委员会" value="1"></el-option>
+        <el-option label="前台部门" value="2"></el-option>
+        <el-option label="中台部门" value="3"></el-option>
+        <el-option label="后台部门" value="4"></el-option>
+      </el-select>
     </el-form-item>
     <el-form-item label="用印份数" prop="yynum">
       <el-input v-model="dataForm.yynum" placeholder="用印份数"></el-input>

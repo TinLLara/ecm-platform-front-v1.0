@@ -58,19 +58,19 @@
         align="center"
         label="用章类型">
       </el-table-column>
-      <el-table-column
+      <!-- <el-table-column
         prop="corpname"
         header-align="center"
         align="center"
         label="公司名称">
-      </el-table-column>
-      <el-table-column
+      </el-table-column> -->
+      <!-- <el-table-column
         prop="fileormeno"
         header-align="center"
         align="center"
         label="文件名或用途">
-      </el-table-column>
-      <el-table-column
+      </el-table-column> -->
+      <!-- <el-table-column
         prop="filename"
         header-align="center"
         align="center"
@@ -105,8 +105,8 @@
         header-align="center"
         align="center"
         label="创建时间">
-      </el-table-column>
-      <el-table-column
+      </el-table-column> -->
+      <!-- <el-table-column
         prop="event"
         header-align="center"
         align="center"
@@ -141,7 +141,7 @@
         header-align="center"
         align="center"
         label="推送流程状态">
-      </el-table-column>
+      </el-table-column> -->
       <el-table-column
         fixed="right"
         header-align="center"
